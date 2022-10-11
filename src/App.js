@@ -33,7 +33,7 @@ const Main = () => {
   
   return (
     <div className='main'>
-      <h2 className='head'>Mr.Гороскопкин</h2>
+      <h2 className='head'>Гороскоп</h2>
       <div className='sign select'>
         <select onChange={handleSelect}>
           <option value="" disabled selected>Выберите знак</option>
@@ -76,7 +76,7 @@ const Card = props => {
         <span>Счастливый номер: <div>{props.lucky_number}</div></span>
         <span>Удачное время: <div>{props.lucky_time}</div></span>
       </div>
-      <p className='card-e'>Я теперь кит</p>
+      <p className='card-e'>Возвращайтесь завтра</p>
     </article>
   )
 }
@@ -85,7 +85,7 @@ const Loader = props => {
     console.log(props);
   return (
     <div className='loader'>
-      Ща всё будет...
+      Загрузка...
       <i class="fas fa-sync-alt fa-spin"></i>
     </div>
   )
